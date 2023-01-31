@@ -1,4 +1,5 @@
 nav {
+  position: fixed;
   height: 120px;
   width: 100vw;
   background-color: #4056a1;
@@ -13,7 +14,7 @@ nav {
 
 .nav-logo {
   font-family: "Bungee", Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .nav-tweet-and-arrow {

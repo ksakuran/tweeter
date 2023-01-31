@@ -1,0 +1,21 @@
+header {
+  background-color: #db6244;
+  background-image: url("https://www.transparenttextures.com/patterns/stacked-circles.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
+  height: 520px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.header-profile-img {
+  display: flex;
+  
+}
+
+.header-name {
+  padding-bottom: 1em;
+}
