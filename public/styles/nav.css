@@ -1,0 +1,32 @@
+nav {
+  height: 120px;
+  width: 100vw;
+  background-color: #4056a1;
+  color: #ffffff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
+
+.nav-logo {
+  font-family: "Bungee", Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.nav-tweet-and-arrow {
+  color: tomato;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.nav-new-tweet {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
