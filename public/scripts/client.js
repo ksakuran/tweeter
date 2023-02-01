@@ -8,9 +8,9 @@
 const createTweetElement = function(tweet) {
 
   const $newTweet = $(`
-  <article>
+  <article class="tweet-container">
     <header class="tweet-container">
-      <div><img src="${tweet.user.avatar}">
+      <div><img src="${tweet.user.avatars}">
       ${tweet.user.name}
       </div>
       <div>${tweet.user.handle}</div>
@@ -33,25 +33,59 @@ const createTweetElement = function(tweet) {
 }
 
 //test driver code 
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-  "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-  "created_at": 1461116232227
-}
+// const tweetData = {
+//   "user": {
+//     "name": "Newton",
+//     "avatars": "https://i.imgur.com/73hZDYK.png",
+//       "handle": "@SirIsaac"
+//     },
+//   "content": {
+//       "text": "If I have seen further it is by standing on the shoulders of giants"
+//     },
+//   "created_at": 1461116232227
+// }
 
 //test dirver code ^^^^
+const renderTweets = function (databaseArray) {
 
+  databaseArray.forEach(element => {
 
-// $(document).ready(function () {
-//   console.log("hello from client, here is new tweet")
-//   const $tweet = createTweetElement(tweetData);
-//   console.log($tweet);
+    const $tweet = createTweetElement(element);
+    const $tweetSection = $('section.tweet-container');
+    $tweetSection.append($tweet);
 
-//   $('section.tweet-container').append($tweet);
-// });
+  });
+}
+
+const data = [
+  {
+    "user": {
+      "name": "Newton",
+      "avatars": "https://i.imgur.com/73hZDYK.png"
+      ,
+      "handle": "@SirIsaac"
+    },
+    "content": {
+      "text": "If I have seen further it is by standing on the shoulders of giants"
+    },
+    "created_at": 1461116232227
+  },
+  {
+    "user": {
+      "name": "Descartes",
+      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "handle": "@rd" },
+    "content": {
+      "text": "Je pense , donc je suis"
+    },
+    "created_at": 1461113959088
+  }
+]
+
+$(document).ready(function () {
+
+  //console.log("hello from client, here is new tweet")
+  
+  renderTweets(data)
+
+});
