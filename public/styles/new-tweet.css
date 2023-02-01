@@ -8,7 +8,7 @@ div.tweet-form-layout {
 
 
 
-#tweet-text {
+#tweet-composer {
   background-color: #f4f1ec;
   width: 100%;
   border: none;
@@ -29,6 +29,12 @@ div.tweet-form-bottom {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  color: #545149;
+
+}
+
+.negative-count {
+  color: red;
 }
 
 #tweet-button {
