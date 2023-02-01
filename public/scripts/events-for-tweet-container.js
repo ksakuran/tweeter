@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   console.log("document is ready");
   //assigns hover to add box shadow for entire tweet container
-  $('section.tweet-container').hover(
+  $('article.tweet-container').hover(
     function() {
       $(this).addClass("hover");
     },
