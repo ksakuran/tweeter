@@ -23,6 +23,7 @@ div.tweet-form-bottom {
   display: flex;
   justify-content: space-between;
   font-family: "Bungee", Helvetica, sans-serif;
+  padding-bottom: 1.5em;
 }
 
 .counter {

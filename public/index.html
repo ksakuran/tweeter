@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="/styles/tweet-display.css" type="text/css"/>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -62,12 +62,33 @@
             <label for="tweet-composer"></label>
             <textarea name="text" id="tweet-composer" placeholder="What are you humming about?"></textarea>
           </div>
-            <div class="tweet-form-bottom">
-              <button id="tweet-button" type="submit">Tweet</button>
-              <output id="count-num" name="counter" class="counter" for="tweet-composer">140</output>
-        </div>
+          <div class="tweet-form-bottom">
+            <button id="tweet-button" type="submit">Tweet</button>
+            <output id="count-num" name="counter" class="counter" for="tweet-composer">140</output>
+          </div>
         </form>
-      </section> 
+      </section>
+
+      <!-- Tweet container on main page -->
+      <section class="tweet-container">
+        <article>
+          <header class="tweet-container">
+            <div>profile image here</div>
+            <div>@handle here</div>
+          </header>
+          <p class="tweet-container">
+            Hello this is my test tweet!
+          </p>
+          <footer class="tweet-container">
+            10 days ago
+            <span class="tweet-container">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </span>
+          </footer>
+        </article>
+      </section>
     </main>
   </body>
 </html>

@@ -8,8 +8,7 @@ nav {
   padding-right: 1.5em;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  
+  align-items: flex-end;  
 }
 
 .nav-logo {
@@ -23,8 +22,8 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
+
 .nav-new-tweet {
   color: #ffffff;
   display: flex;
