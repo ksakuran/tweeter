@@ -16,6 +16,15 @@ section.tweet-container {
   margin-top: 1.3em
 }
 
+section.hover.tweet-container {
+  box-shadow: 6px 6px 3px lightsteelblue;
+  border-width: 4px;
+  border-style: solid;
+  padding: 1em;
+  margin-bottom: 1.3em;
+  margin-top: 1.3em
+}
+
 p.tweet-container {
   margin-block-end: 12px;
   border-bottom-width: 4px;
@@ -43,4 +52,8 @@ span.tweet-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+span i.hover {
+  color: tomato;
 }
