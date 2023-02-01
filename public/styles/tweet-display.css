@@ -37,6 +37,7 @@ footer.tweet-container {
 }
 
 span.tweet-container {
+  color: #4056a1;
   padding: 0.1em;
   width: 4em;
   display: flex;
