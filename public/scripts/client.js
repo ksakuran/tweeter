@@ -83,21 +83,48 @@ $(document).ready(function () {
   const $tweetForm = $('form.new-tweet');
   $('#form-error').hide()
 
+  const $noTextError = $(
+   `<div id="form-error">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p class="error">"Error! Text input invalid, cannot submit an empty tweet."</p>
+      <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>`);
+  
+  const $textLimitError = $(
+    `<div id="form-error">
+       <i class="fa-solid fa-triangle-exclamation"></i>
+       <p class="error">"Error! Text input invalid, tweet is over character limit."</p>
+       <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>`);
+  
+
   $tweetForm.submit(function(event) {
     event.preventDefault();
     $('#form-error').hide()
 
     //send alert if textarea is empty on submit 
     if (!$('#tweet-composer').val()) {
-      $('p.error').html("Error! Text input invalid, cannot submit an empty tweet.")
-      $('#form-error').show();
+      
+      $('form.new-tweet').prepend($noTextError);
+      $('#form-error').hide();
+      $('#form-error').slideDown("slow");
+      setTimeout(() => {
+        $('#form-error').slideUp("slow");
+      }, "7000");
+      
       return $('#tweet-composer').val("");
     } 
 
     // send alert if textarea is more than character limit, clear
     if ($('#tweet-composer').val().length > 140) {
-      $('p.error').html("Error! Text input invalid, tweet is over character limit.")
-      $('#form-error').show()
+
+      $('form.new-tweet').prepend($textLimitError);
+      $('#form-error').hide();
+      $('#form-error').slideDown("slow");
+      setTimeout(() => {
+        $('#form-error').slideUp("slow");
+      }, "7000");
+      
       return $('#tweet-composer').val("");
     }
 
