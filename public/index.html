@@ -31,7 +31,6 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/scripts/events-for-tweet-container.js"></script>
   
   
   </head>
@@ -61,11 +60,17 @@
     <main class="container">
       <section class="new-tweet">
         <h2 id="new-tweet-h2">Compose Tweet</h2>
+        <div id="form-error">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p class="error"></p>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
         <form class= "new-tweet" method="post" action="/tweets/">
           <div class="tweet-form-layout">
             <label for="tweet-composer"></label>
             <textarea name="text" id="tweet-composer" placeholder="What are you humming about?"></textarea>
           </div>
+          
           <div class="tweet-form-bottom">
             <button id="tweet-button" type="submit">Tweet</button>
             <output id="count-num" name="counter" class="counter" for="tweet-composer">140</output>

@@ -7,6 +7,12 @@
 //function to create html structure to add in to the dom
 const createTweetElement = function(tweet) {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const $newTweet = $(`
   <article class="tweet-container">
     <header class="tweet-container">
@@ -16,7 +22,7 @@ const createTweetElement = function(tweet) {
       <div>${tweet.user.handle}</div>
     </header>
       <p class="tweet-container">
-      ${tweet.content.text}
+      ${escape(tweet.content.text)}
       </p>
     <footer class="tweet-container">
       ${timeago.format(tweet.created_at)}
@@ -75,19 +81,23 @@ const renderTweets = function (databaseArray) {
 $(document).ready(function () {
 
   const $tweetForm = $('form.new-tweet');
+  $('#form-error').hide()
 
   $tweetForm.submit(function(event) {
     event.preventDefault();
+    $('#form-error').hide()
 
     //send alert if textarea is empty on submit 
     if (!$('#tweet-composer').val()) {
-      alert("Text input invalid, cannot submit empty tweet");
+      $('p.error').html("Error! Text input invalid, cannot submit an empty tweet.")
+      $('#form-error').show();
       return $('#tweet-composer').val("");
-    }
+    } 
 
     // send alert if textarea is more than character limit, clear
     if ($('#tweet-composer').val().length > 140) {
-      alert("Text input invalid, over character limit")
+      $('p.error').html("Error! Text input invalid, tweet is over character limit.")
+      $('#form-error').show()
       return $('#tweet-composer').val("");
     }
 

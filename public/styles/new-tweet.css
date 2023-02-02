@@ -6,10 +6,14 @@ div.tweet-form-layout {
   display: flex;
 }
 
-
+section.new-tweet h2 {
+  margin-bottom: 1em;
+}
 
 #tweet-composer {
+  margin-top: 0.5em;
   background-color: #f4f1ec;
+  height: 60px;
   width: 100%;
   border: none;
   outline: none;
@@ -46,3 +50,27 @@ div.tweet-form-bottom {
 #tweet-button:hover {
   box-shadow: 4px 4px 2px lightsteelblue;
 }
+
+#form-error {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: red;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* #form-error {
+  padding: 0.5em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: red;
+  font-weight: bold;
+  display: none;
+} */
