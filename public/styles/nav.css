@@ -30,3 +30,8 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+
+i.fa-angles-down:hover {
+  color:gold;
+  text-shadow: 2px 2px 1px lightsteelblue;
+}
