@@ -42,3 +42,7 @@ div.tweet-form-bottom {
   background-color: #4056a1;
   color: white;
 }
+
+#tweet-button:hover {
+  box-shadow: 4px 4px 2px lightsteelblue;
+}
