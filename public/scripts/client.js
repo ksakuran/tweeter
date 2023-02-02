@@ -60,14 +60,15 @@ const createTweetElement = function(tweet) {
 
 //renders tweets from database into html elements and appends to the tweet section
 const renderTweets = function (databaseArray) {
+  const $tweetSection = $('section.tweet-container');
+  //clear the section so that the database isn't repeating for every get request
+  $tweetSection.empty();
 
-  databaseArray.forEach(element => {
-
+  databaseArray.forEach(element => {    
     const $tweet = createTweetElement(element);
-    const $tweetSection = $('section.tweet-container');
-    $tweetSection.append($tweet);
+    $tweetSection.prepend($tweet);
+ });
 
-  });
 }
 
 
@@ -96,12 +97,16 @@ $(document).ready(function () {
     //create post request with data from tweet form, clear
     $.post('/tweets/', data, (response) => {
       $('#tweet-composer').val("");
+      loadTweets();
     });
+
+    
   });
 
 
   //make a get request and recieve the array of tweets as JSON
   const loadTweets = function () {
+
      $.get('/tweets')
      .then(response => {
       renderTweets(response);
@@ -109,4 +114,5 @@ $(document).ready(function () {
    };
 
    loadTweets();
+
 });
