@@ -78,14 +78,27 @@ $(document).ready(function () {
   $tweetForm.submit(function(event) {
     event.preventDefault();
 
+    //send alert if textarea is empty on submit 
+    if (!$('#tweet-composer').val()) {
+      alert("Text input invalid, cannot submit empty tweet");
+      return $('#tweet-composer').val("");
+    }
+
+    // send alert if textarea is more than character limit, clear
+    if ($('#tweet-composer').val().length > 140) {
+      alert("Text input invalid, over character limit")
+      return $('#tweet-composer').val("");
+    }
+
     //url encode the data from the form since the server is expecting this format
     const data = $tweetForm.serialize();
-    
-    //create post request with data from tweet form
-    $.post('/tweets/', data, (response) => {   
+ 
+    //create post request with data from tweet form, clear
+    $.post('/tweets/', data, (response) => {
+      $('#tweet-composer').val("");
     });
-
   });
+
 
   //make a get request and recieve the array of tweets as JSON
   const loadTweets = function () {
