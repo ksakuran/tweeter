@@ -33,7 +33,7 @@ article.tweet-container {
   margin-bottom: 20px;
 }
 
-article.hover.tweet-container {
+article.tweet-container:hover {
   box-shadow: 6px 6px 3px lightsteelblue;
   border-width: 4px;
   border-style: solid;
@@ -70,6 +70,6 @@ span.tweet-container {
   justify-content: space-between;
 }
 
-span i.hover {
+span i:hover {
   color: tomato;
 }
