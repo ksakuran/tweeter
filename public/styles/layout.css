@@ -33,3 +33,26 @@ main {
   padding-right: 1em;
 
 }
+
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  header.profile {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  main.section {
+    width: 50%;
+    margin-right: 2.5em;
+  }
+
+}

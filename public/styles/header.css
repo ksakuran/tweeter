@@ -11,10 +11,25 @@ header {
   flex-direction: column;
 }
 
-.header-profile-img {
+/* .header-profile-img {
   display: flex;
-}
+} */
 
 .header-name {
   padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  header.profile {
+    width: 50%;
+    margin-top: 180px;
+    margin-left: 2em; 
+    margin-right: 2em;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
 }

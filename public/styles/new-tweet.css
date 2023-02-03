@@ -67,10 +67,10 @@ div.tweet-form-bottom {
   justify-content: space-between;
 }
 
-/* #form-error {
-  padding: 0.5em;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  color: red;
-  font-weight: bold;
-  display: none;
-} */
+@media only screen and (min-width: 1024px) {
+  
+  section.new-tweet {
+    margin-top: 180px;
+  }
+
+}

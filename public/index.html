@@ -4,7 +4,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     
     <title>Tweeter - Home Page</title>
 
@@ -33,6 +33,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- App JS -->
+    <script type="text/javascript" src="/scripts/helper.js"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   
@@ -50,7 +51,7 @@
           <i class="fa-solid fa-angles-down"></i>
         </span>
     </nav>
-    <header>
+    <header class="profile">
       <div class="header-profile-img">
           <img src="/images/profile-hex.png"> 
       </div>
@@ -77,26 +78,9 @@
         </form>
       </section>
 
-      <!-- Tweet container on main page -->
+      <!-- Tweet container on main page
+           gets filled by ajax requests -->
       <section class="tweet-container">
-        <!-- <article class="tweet-container">
-          <header class="tweet-container">
-            <div><img src="/images/profile-hex.png">
-            profile name</div>
-            <div>@handle here</div>
-          </header>
-          <p class="tweet-container">
-            Hello this is my test tweet!
-          </p>
-          <footer class="tweet-container">
-            10 days ago
-            <span class="tweet-container">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </span>
-          </footer>
-        </article> -->
       </section>
     </main>
   </body>

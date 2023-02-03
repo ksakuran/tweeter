@@ -1,7 +1,6 @@
-//console.log("hello from char counter")
+
 
 $(document).ready(function() {
-  console.log("document is ready");
 
   //access the textarea by id to get the value of characters by length
   $('#tweet-composer').keyup(function(event) {
