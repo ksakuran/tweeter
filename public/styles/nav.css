@@ -31,7 +31,18 @@ nav {
   justify-content: center;
 }
 
+#arrows {
+  background-color: transparent;
+  border-style: none;
+  color: tomato;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+
 i.fa-angles-down:hover {
-  color:gold;
+  color: gold;
   text-shadow: 2px 2px 1px lightsteelblue;
 }
+

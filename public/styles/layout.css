@@ -55,4 +55,8 @@ main {
     margin-right: 2.5em;
   }
 
+  main.container {
+    margin-top: 158px;
+  }
+
 }
