@@ -18,3 +18,14 @@ Students fork and clone a inital Lighthouse Labs repository with an inital serve
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshots of Tweeter mobile view"] (https://github.com/ksakuran/tweeter/blob/master/docs/tweeter-mobile-view.png)
+
+!["Screenshots of Tweeter desktop view"] (https://github.com/ksakuran/tweeter/blob/master/docs/tweeter-desktop-view.png)
+
+!["Screenshots of Tweeter's fixed navigation bar"] (https://github.com/ksakuran/tweeter/blob/master/docs/tweeter-fixed-nav.png)
+
+!["Screenshot of Tweeter's composer, character count and error display"] (https://github.com/ksakuran/tweeter/blob/master/docs/tweeter-char-limit.png)
+
