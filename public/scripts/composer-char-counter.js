@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   //access the textarea by id to get the value of characters by length
-  $('#tweet-composer').keyup(function(event) {
+  $('#tweet-composer').on("input", function(event) {
     const textLength = $(this).val().length;
     const maxLength = 140;
     const textCount = maxLength - textLength;
