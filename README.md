@@ -29,3 +29,7 @@ Students fork and clone a inital Lighthouse Labs repository with an inital serve
 
 !["Screenshot of Tweeter's composer, character count and error display"](https://github.com/ksakuran/tweeter/blob/master/docs/tweeter-char-limit.png)
 
+## Video
+
+!["Video of nav button, slides down Tweeter's composer"](https://github.com/ksakuran/tweeter/blob/master/docs/nav-button.webm)
+
