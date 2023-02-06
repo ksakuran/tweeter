@@ -57,5 +57,8 @@ const loadTweets = function() {
   $.get('/tweets')
     .then(response => {
       renderTweets(response);
+    })
+    .fail(() => {
+      alert("Something went wrong");
     });
 };
