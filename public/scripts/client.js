@@ -65,6 +65,7 @@ $(document).ready(function() {
 
       //reset form area
       $('#tweet-composer').val("");
+      $('#count-num').val(140);
       
       loadTweets();
     });
