@@ -8,6 +8,7 @@ $(document).ready( function() {
       $('section.new-tweet').slideUp();
     } else {
       $('section.new-tweet').slideDown();
+      $('#tweet-composer').focus();
     }
 
   });
