@@ -4,11 +4,10 @@ nav {
   width: 100vw;
   background-color: transparent;
   color: #ffffff;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: 1.2em;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;  
+  align-items: center;  
 }
 
 .nav-logo {
@@ -34,7 +33,7 @@ nav {
 #arrows {
   background-color: transparent;
   border-style: none;
-  color: tomato;
+  color:#4056a1;
   display: flex;
   justify-content: flex-start;
 
@@ -48,7 +47,19 @@ i.fa-angles-down:hover {
 
 @media only screen and (min-width: 1024px) {
 
-  nav{
+  nav {
     background-color: #4056a1;
   }
+
+  #arrows {
+    color: tomato;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 }

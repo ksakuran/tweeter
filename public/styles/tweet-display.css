@@ -79,3 +79,13 @@ p.tweet-container {
   overflow-wrap: anywhere;
   word-break: break-all;
 }
+
+@media only screen and (max-width: 550px) {
+  header.tweet-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow-wrap: anywhere;
+    flex-direction: column;
+  }
+}

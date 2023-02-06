@@ -11,9 +11,15 @@ header {
   flex-direction: column;
 }
 
-/* .header-profile-img {
-  display: flex;
-} */
+.img {
+  margin: 1.5em;
+}
+
+header.h2 {
+  padding-right: 1em;
+  padding-left: 1em;
+  
+} 
 
 #header-name {
   padding-bottom: 1em;
@@ -37,4 +43,9 @@ header {
 
 
 
+}
+
+@media only screen and (max-width: 550px) {
+
+  
 }
