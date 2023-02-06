@@ -15,7 +15,7 @@ header {
   display: flex;
 } */
 
-.header-name {
+#header-name {
   padding-bottom: 1em;
 }
 
@@ -27,9 +27,14 @@ header {
     margin-left: 2em; 
     margin-right: 2em;
     height: 400px;
+    padding-top: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    flex-direction: row;
   }
+
+
 
 }
