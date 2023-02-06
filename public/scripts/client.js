@@ -68,6 +68,9 @@ $(document).ready(function() {
       $('#count-num').val(140);
       
       loadTweets();
+    })
+    .fail(() => {
+      alert("Something went wrong");
     });
   
   });
