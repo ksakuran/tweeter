@@ -73,3 +73,9 @@ span.tweet-container {
 span i:hover {
   color: tomato;
 }
+
+p.tweet-container {
+  display: flex;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
